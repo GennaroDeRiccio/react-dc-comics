@@ -34,17 +34,21 @@ export default function LinkBar() {
   ];
 
   return (
-    <nav className="navBlue">
-      <ul className="ulBlue">
-        {linkNavbarBlue.map((link, index) => (
-          <li key={index} className="blue-link-item">
-            <a href={link.url}>
-              <img src={link.img} alt={link.label} />
-              <span>{link.label}</span>
-            </a>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <section className="nav-section">
+      <div className="container">
+        <nav className="navBlue">
+          <ul className="ulBlue">
+            {linkNavbarBlue.map((link) => (
+              <li key={link.label} className="blue-link-item">
+                <a href={link.url}>
+                  <img src={link.img} alt={link.label} />
+                  <span>{link.label}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </section>
   );
 }

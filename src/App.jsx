@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Main from "./components/Main";
+import LinkBar from "./components/LinkBar";
 import Footer from "./components/Footer";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <Main />
+      <LinkBar />
       <Footer />
     </>
   );
